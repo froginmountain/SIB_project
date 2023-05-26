@@ -6,15 +6,14 @@ CREATE TABLE userdata
   id CHAR(6) NOT NULL,
   pw VARCHAR(20) NOT NULL,
   major VARCHAR(30) NOT NULL ,
-  e_mail VARCHAR(30),
+  email VARCHAR(30),
   club VARCHAR(20),
   clubadmin BOOLEAN DEFAULT FALSE,
   fulladmin BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE clubdata
-( clubID CHAR(4) NOT NULL PRIMARY KEY,
-  club_name VARCHAR(30) NOT NULL,
+( club_name VARCHAR(30) NOT NULL PRIMARY KEY,
   category TEXT,
   count_mem INT NOT NULL,
   description TEXT,
@@ -32,4 +31,14 @@ CREATE TABLE clubscore
   reason TEXT,
   FOREIGN KEY(club_name) REFERENCES clubdata(club_name),
   FOREIGN KEY(clubID) REFERENCES clubdata(clubID)
+);
+
+CREATE TABLE postdata
+( post_num INT AUTO_INCREMENT PRIMARY KEY,   
+  postname VARCHAR(50) NOT NULL,
+  contents TEXT,
+  writer CHAR(6) NOT NULL,
+  category CHAR(5) NOT NULL, -- 이건 프론트만 이용해도 구현 될 것 같아요
+  recommend INT DEFAULT 0
+  FOREIGN KEY(writer) REFERENCES userdata(id)
 );
