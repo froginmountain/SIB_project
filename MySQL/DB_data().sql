@@ -1,4 +1,5 @@
 USE sib;
+
 INSERT INTO userdata (id, pw, major, email, club) VALUES
 ('208782', '9m9ilju9', '컴퓨터정보통신공학과', '208782@jnu.ac.kr', NULL);
 INSERT INTO userdata (id, pw, major, email, club) VALUES
