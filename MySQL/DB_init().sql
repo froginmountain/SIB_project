@@ -35,8 +35,8 @@ CREATE TABLE postdata
 ( post_num INT AUTO_INCREMENT PRIMARY KEY,   
   postname VARCHAR(50) NOT NULL,
   contents TEXT,
-  writer CHAR(6) NOT NULL,
-  category CHAR(5) NOT NULL, -- 이건 프론트만 이용해도 구현 될 것 같아요
-  recommend INT DEFAULT 0,
-  FOREIGN KEY(writer) REFERENCES userdata(id)
+  writer VARCHAR(30) NOT NULL,
+  category CHAR(5) NOT NULL, --이건 프론트만 이용해도 구현 될 것 같아요
+  recommend INT DEFAULT 0
+  FOREIGN KEY(writer) REFERENCES userdata(e_mail)
 );
