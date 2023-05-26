@@ -37,6 +37,6 @@ CREATE TABLE postdata
   contents TEXT,
   writer VARCHAR(30) NOT NULL,
   category CHAR(5) NOT NULL, --이건 프론트만 이용해도 구현 될 것 같아요
-  recommend INT DEFAULT 0
+  recommend INT DEFAULT 0,
   FOREIGN KEY(writer) REFERENCES userdata(e_mail)
 );
