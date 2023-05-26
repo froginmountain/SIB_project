@@ -26,11 +26,9 @@ CREATE TABLE clubdata
 
 CREATE TABLE clubscore
 ( club_name VARCHAR(30) NOT NULL,
-  clubID CHAR(4) NOT NULL,
   score FLOAT,
   reason TEXT,
-  FOREIGN KEY(club_name) REFERENCES clubdata(club_name),
-  FOREIGN KEY(clubID) REFERENCES clubdata(clubID)
+  FOREIGN KEY(club_name) REFERENCES clubdata(club_name)
 );
 
 CREATE TABLE postdata
@@ -39,6 +37,6 @@ CREATE TABLE postdata
   contents TEXT,
   writer CHAR(6) NOT NULL,
   category CHAR(5) NOT NULL, -- 이건 프론트만 이용해도 구현 될 것 같아요
-  recommend INT DEFAULT 0
+  recommend INT DEFAULT 0,
   FOREIGN KEY(writer) REFERENCES userdata(id)
 );
