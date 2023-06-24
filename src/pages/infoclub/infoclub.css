@@ -1,0 +1,68 @@
+.clublists__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.card.clublist {
+    padding: 1rem;
+}
+
+.clublist__img {
+    border-radius: 0 2rem;
+    overflow: hidden;
+}
+
+.clublist p {
+    margin-top: 0.5rem;
+}
+
+.clublist h3 {
+    margin-top: 3rem;
+}
+
+.clublist__socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.clublist__socials a {
+    font-size: 1rem;
+    background: var(--color-gray-300);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    transition: var(--transition);
+}
+
+.clublist:hover a {
+    background: var(--color-gray-100);
+}
+
+
+
+
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+    .clublists__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+
+/* MEDIA QUERIES (small screens) */
+@media screen and (max-width: 1024px) {
+    .clublists__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .card.clublist {
+        width: 90%;
+        margin-inline: auto;
+    }
+}
