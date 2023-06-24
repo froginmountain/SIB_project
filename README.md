@@ -1,3 +1,11 @@
+![스크린샷 2023-06-24 154327](https://github.com/froginmountain/SIB_project/assets/63395324/2b6ae276-ad78-4da5-8d86-096d61ae6ac9)
+![스크린샷 2023-06-24 154335](https://github.com/froginmountain/SIB_project/assets/63395324/f990890c-fcfa-4b9c-bf18-6d525841504f)
+![스크린샷 2023-06-24 154343](https://github.com/froginmountain/SIB_project/assets/63395324/8689c3dc-5242-43d7-b4ca-723cdbe0305a)
+![스크린샷 2023-06-24 154356](https://github.com/froginmountain/SIB_project/assets/63395324/b1d5f432-dea9-4a9b-bd70-aa2cc8cd6edf)
+![스크린샷 2023-06-24 154418](https://github.com/froginmountain/SIB_project/assets/63395324/3756e974-bf04-4a6b-b3ff-eb97c7ec2a62)
+![스크린샷 2023-06-24 154426](https://github.com/froginmountain/SIB_project/assets/63395324/ffe27b5a-677c-492d-9e05-da4f7ec8c3a8)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
