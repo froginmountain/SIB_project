@@ -42,13 +42,18 @@
     background: linear-gradient(75deg, var(--color-secondary), transparent);
     border-radius: 50%;
     position: absolute;
-    filter: blur(15px);
+    /* filter: blur(15px); */
     transition: var(--transition);
 }
 
 .main__header-image {
     position: relative;
 }
+
+.main__header-right:hover .main__header-circle {
+    filter: blur(15px);
+}
+
 
 /* =============== Programs ============== */
 .programs {
@@ -237,121 +242,4 @@ footer {
     padding: 1.5rem 0;
     border-top: 2px solid var(--color-primary-variant);
     margin-top: 5rem;
-}
-
-/* MEDIA QUERIES (medium screens) */
-@media screen and (max-width: 1024px) {
-    /* Main Header */
-    .main__header {
-        height: fit-content;
-        padding: 12rem 0;
-    }
-
-    .main__header-container {
-        gap: 0;
-    }
-
-    .main__header-circle {
-        width: 16rem;
-        height: 16rem;
-    }
-
-    /* programs */
-    .programs__wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* values */
-    .values__container {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        gap: 4rem;
-    }
-
-    .values__wrapper {
-        gap: 4rem 3rem;
-    }
-
-    .values__image {
-        display: none;
-    }
-
-    /* faqs */
-    .faqs__wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    /* footer */
-    .footer__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-    }
-}
-
-
-
-
-/* MEDIA QUERIES (medium screens) */
-@media screen and (max-width: 600px){
-    /* Main Header */
-    .main__header {
-        margin-top: 0;
-        padding: 12rem 0 0;
-        height: 100vh;
-    }
-
-    .main__header-image, .main__header-circle {
-        display: none;
-    }
-
-    .main__header-container{
-        grid-template-columns: 1fr;
-    }
-
-    /* programs */
-    .programs__wrapper{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-top: 3rem;
-    }
-
-    .programs__program{
-        width: 84%;
-        margin: 0 auto;
-    }
-
-    /* values */
-    .values__wrapper {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .card.values__value{
-        width: 84%;
-        margin-inline: auto;
-    }
-
-    /* faqs */
-    .faqs__wrapper {
-        gap: 1rem;
-        margin-top: 3rem;
-    }
-
-    /* footer */
-    footer {
-        margin-top: 7rem;
-    }
-
-    .footer__container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .footer__container article {
-        align-items: center;
-    }
-
-    .footer__container article p {
-        text-align: center;
-    }
 }

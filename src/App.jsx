@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import React, { useState, useEffect } from 'react'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import InfoClub from './pages/infoclub/InfoClub'
@@ -23,6 +23,7 @@ const App = () => {
         {/* <Route path='board' element={<Board/>}/>
         <Route path='register' element={<Register/>}/> */}
         <Route path='*' element={<NotFound/>}/>
+        <Route path='register' element={<Register/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
