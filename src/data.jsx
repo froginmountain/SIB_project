@@ -2,6 +2,15 @@ import {SiOpenaigym, clubweb} from 'react-icons/si'
 
 import { AiOutlineUser } from "react-icons/ai"
 
+import { BsPeople } from 'react-icons/bs'
+
+import { FiEye} from 'react-icons/fi'
+
+import { AiOutlineCheckCircle } from 'react-icons/ai'
+
+import { AiFillTool } from 'react-icons/ai'
+
+import { AiFillEdit} from 'react-icons/ai'
 
 export const links = [
     {
@@ -67,28 +76,28 @@ export const links2 = [
 export const programs = [
     {
         id: 1,
-        icon: <AiOutlineUser/>,
+        icon: <BsPeople/>,
         title: "SIB",
         info: "심플한게 베스트.",
         path: "/programs/1"
     },
     {
         id: 2,
-        icon: <AiOutlineUser/>,
+        icon: <BsPeople/>,
         title: "GoKakao",
         info: "교내 코딩 전문 동아리입니다.",
         path: "/programs/2"
     },
     {
         id: 3,
-        icon: <AiOutlineUser/>,
+        icon: <BsPeople/>,
         title: "전남대 총동아리",
         info: "모든 동아리들의 정보를 가지고 있습니다.",
         path: "/programs/3"
     },
     {
         id: 4,
-        icon: <AiOutlineUser/>,
+        icon: <BsPeople/>,
         title: "GG",
         info: "교내 게임 모임 동아리입니다.",
         path: "/programs/4"
@@ -98,25 +107,25 @@ export const programs = [
 export const values = [
     {
         id: 1,
-        icon: <AiOutlineUser/>,
+        icon: <AiFillEdit/>,
         title: "Easy",
         desc: "매우 친숙한 인터페이스로 사용하기 쉽습니다."
     },
     {
         id: 2,
-        icon: <AiOutlineUser/>,
+        icon: <FiEye/>,
         title: "Simple",
         desc: "동아리에 대한 일관된 정보를 제공합니다."
     },
     {
         id: 3,
-        icon: <AiOutlineUser/>,
+        icon: <AiOutlineCheckCircle/>,
         title: "Perfect",
         desc: "동아리에 대한 모든 정보를 완벽하게 제공합니다."
     },
     {
         id: 4,
-        icon: <AiOutlineUser/>,
+        icon: <AiFillTool/>,
         title: "Usefuly",
         desc: "유용한 정보를 쉽게 접할 수 있습니다."
     },

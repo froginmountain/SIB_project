@@ -1,5 +1,6 @@
 import './verifyClub.css'
 import {Link} from 'react-router-dom'
+import Image from "../../images/clubinfo.png"
 
 const VerifyClub = () => {
   return (

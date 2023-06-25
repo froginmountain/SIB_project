@@ -4,6 +4,7 @@ import { clublists } from '../../data'
 import { BsInstagram } from 'react-icons/bs'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
+import { FaDiscord} from 'react-icons/fa'
 import Clublist from '../../components/Clublist'
 import './infoclub.css'
 
@@ -19,9 +20,10 @@ const InfoClub = () => {
             clublists.map(({ id, image, name, descr, socials }) => {
               return <Clublist key={id} image={image} name={name} descr={descr} socials={
                 [
-                  { icon: <BsInstagram />, link: socials[0] },
-                  { icon: <AiOutlineTwitter />, link: socials[1] },
-                  { icon: <FaFacebookF />, link: socials[2] }
+                  { icon: <FaDiscord />, link: socials[0] },
+                  { icon: <BsInstagram />, link: socials[1] },
+                  { icon: <AiOutlineTwitter />, link: socials[2] },
+                  { icon: <FaFacebookF />, link: socials[3] }
                 ]
               } />
             })

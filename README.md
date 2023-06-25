@@ -1,78 +1,15 @@
-![스크린샷 2023-06-24 154327](https://github.com/froginmountain/SIB_project/assets/63395324/2b6ae276-ad78-4da5-8d86-096d61ae6ac9)
-![스크린샷 2023-06-24 154335](https://github.com/froginmountain/SIB_project/assets/63395324/f990890c-fcfa-4b9c-bf18-6d525841504f)
-![스크린샷 2023-06-24 154343](https://github.com/froginmountain/SIB_project/assets/63395324/8689c3dc-5242-43d7-b4ca-723cdbe0305a)
-![스크린샷 2023-06-24 154356](https://github.com/froginmountain/SIB_project/assets/63395324/b1d5f432-dea9-4a9b-bd70-aa2cc8cd6edf)
-![스크린샷 2023-06-24 154418](https://github.com/froginmountain/SIB_project/assets/63395324/3756e974-bf04-4a6b-b3ff-eb97c7ec2a62)
-![스크린샷 2023-06-24 154426](https://github.com/froginmountain/SIB_project/assets/63395324/ffe27b5a-677c-492d-9e05-da4f7ec8c3a8)
+# Home
+![스크린샷 2023-06-25 210404](https://github.com/Pastedd/SIB_project/assets/63395324/24b86afe-1e13-4ee7-82b4-2e5620824b3c)
+![스크린샷 2023-06-25 210415](https://github.com/Pastedd/SIB_project/assets/63395324/97f3b4a0-d262-4f3c-b27c-a2d5a71b298d)
+![스크린샷 2023-06-25 210422](https://github.com/Pastedd/SIB_project/assets/63395324/917cbf16-c3ff-4067-b71e-a0b2120dd582)
+![스크린샷 2023-06-25 210449](https://github.com/Pastedd/SIB_project/assets/63395324/c864f763-7345-4485-a405-35af7baa1044)
 
+# Club Infomation List
+![스크린샷 2023-06-25 210503](https://github.com/Pastedd/SIB_project/assets/63395324/44241092-6200-483f-8adf-e33208707066)
+![스크린샷 2023-06-25 210510](https://github.com/Pastedd/SIB_project/assets/63395324/f95fa588-c7c2-4050-a172-2e03fcd6d379)
 
-# Getting Started with Create React App
+# Club Request Linked
+![스크린샷 2023-06-25 210519](https://github.com/Pastedd/SIB_project/assets/63395324/56ccfc0d-1be7-49af-82e6-d835583fcef2)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Login
+![스크린샷 2023-06-25 210530](https://github.com/Pastedd/SIB_project/assets/63395324/f3e61ec3-39a8-43fe-9f36-c26065fb7e12)

@@ -60,7 +60,7 @@ const RegisterForm = () => {
       fulladmin: account.fulladmin
     };
     fetch("http://localhost:5000/insert", {
-      method: "post",
+      method: "get",
       headers: {
         "Content-Type": "application/json",
       },
