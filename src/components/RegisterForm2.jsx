@@ -35,6 +35,11 @@ const RegisterForm = () => {
   const [account, setAccount] = useState({
     id: "",
     password: "",
+    major: "",
+    email: "",
+    club: "",
+    clubadmin: 0,
+    fulladmin: 0,
   });
 
   const handleChange = (e) => {
@@ -44,33 +49,26 @@ const RegisterForm = () => {
     });
   };
 
-  const onCheck = () => {
+  const onClick = () => {
     const temp = {
       id: account.id,
-      pw: account.password
+      pw: account.password,
+      mj: account.major,
+      em: account.email,
+      clu: account.club,
+      clubadmin: account.clubadmin,
+      fulladmin: account.fulladmin
     };
-    console.log(temp.id);
-    console.log(temp.pw);
-    fetch("http://localhost:5000/select", {
+    fetch("http://localhost:5000/insert", {
       method: "get",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(temp),
     })
-      .then(res => res.json())
-      .then(json => {
-        // 여기서 받은 JSON 데이터를 원하는 대로 처리합니다.
-        if (Object.values(json)[0] === 1) {
-          console.log("로그인 성공");
-          console.log(account.id);
-          cookieSave({ target: { value: account.id } });
-        } else {
-          console.log("로그인 실패");
-        }
-      })
-      .catch((err) => {
-        console.log("오류:", err);
+      .then((res) => res.json())
+      .then((json) => {
+        console.log(json);
       });
   };
 
@@ -79,18 +77,24 @@ const RegisterForm = () => {
       <div className="container main__header-container">
         <div className="main__header-left">
           <div className="login-wrapper">
-            <h2>Login</h2>
+            <h2>Register</h2>
             <form action='/' method='get'>
             <br />
             <input type="text" name="id" placeholder="아이디" onChange={handleChange}></input>
             <br />
             <input type="password" name="password" placeholder="패스워드" onChange={handleChange}></input>
             <br />
-            <input className='login_button' type="submit" value="로그인" onClick={onCheck}></input>
+            <input type="text" name="major" placeholder="전공학과" onChange={handleChange}></input>
+            <br />
+            <input type="text" name="email" placeholder="이메일" onChange={handleChange}></input>
+            <br />
+            <input type="text" name="club" placeholder="동아리" onChange={handleChange}></input>
+            <br />
+            <input className='login_button' type="submit" value="회원가입" onClick={onClick}></input>
             <br />
             </form>
 
-            <a className='register_button' href='/register2'>회원가입</a>
+            <a className='register_button' href='/register'>로그인</a>
 
           </div>
         </div>

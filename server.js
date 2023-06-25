@@ -12,7 +12,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 // React 애플리케이션 라우트
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
@@ -42,17 +41,23 @@ connection.connect((err) => {
 });
 
 app.post("/insert", (req, res) => {
-    const user_id = req.body.inText;
+    const user_id = req.body.id;
+    const user_pw = req.body.pw;
+    const user_mj = req.body.mj;
+    const user_em = req.body.em;
+    const user_clu = req.body.clu;
+    const clubadmin = req.body.clubadmin;
+    const fulladmin = req.body.fulladmin;
     console.log(user_id);
     connection
         .promise()
-        .query("INSERT INTO new_table (user_id) VALUES (?)", [user_id])
+        .query("INSERT INTO userdata (id, pw, major, email, club, clubadmin, fulladmin) VALUES (?, ?, ?, ?, ?, ?, ?)", [user_id, user_pw, user_mj, user_em, user_clu, clubadmin, fulladmin])
         .then(() => {
-            console.log("DB 저장 성공");
+            console.log("DB 삽입 성공");
             res.sendStatus(200);
         })
         .catch((err) => {
-            console.log("DB 저장 실패:", err);
+            console.log("DB 삽입 실패:", err);
             res.sendStatus(500);
         });
 });

@@ -5,9 +5,6 @@ import { FaFacebookF } from 'react-icons/fa'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiFillInstagram } from 'react-icons/ai'
 
-
-
-
 const Footer = () => {
   return (
     <footer>
