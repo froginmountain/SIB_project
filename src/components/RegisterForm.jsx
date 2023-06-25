@@ -52,7 +52,7 @@ const RegisterForm = () => {
     console.log(temp.id);
     console.log(temp.pw);
     fetch("http://localhost:5000/select", {
-      method: "get",
+      method: "post",
       headers: {
         "Content-Type": "application/json",
       },
